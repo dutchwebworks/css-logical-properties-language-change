@@ -114,7 +114,7 @@ header {
 
 .language__buttons {
     display: flex;
-    gap: 32px;
+    gap: 16px;
 }
 
 .language__button {
@@ -130,4 +130,103 @@ header {
 .language__button.is-active,
 .language__button:hover {
     background-color: var(--clr-secondary);
+}
+
+.cards {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-block-end: 20px;
+    max-width: 1024px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    border-inline-start: 10px solid var(--clr-primary);
+}
+
+.card__header {
+    overflow: hidden;
+}
+
+.card__img {
+    transition: scale .3s;
+}
+
+.card:hover .card__img {
+    scale: 1.15;
+}
+
+.card__title,
+.card__body,
+.card__cta {
+    margin-inline: 20px;
+}
+
+.card__title {
+    margin-block-start: 20px;
+    margin-block-end: 0;
+    color: var(--clr-secondary);
+}
+
+.card__body {
+    color: var(--clr-gray);
+    font-size: 18px;
+}
+
+.card__cta {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-block-start: auto;
+    padding-block-end: 20px;
+}
+
+.card__button {
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: var(--clr-primary);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color .3s;
+}
+
+.card__button-primary {
+    background-color: var(--clr-primary);
+}
+
+.card__button-primary:hover {
+    background-color: var(--clr-secondary);
+}
+
+.card__button-secondary {
+    background-color: var(--clr-gray);
+}
+
+html[dir="rtl"] .card__button .icon {
+    rotate: y 180deg;
+}
+
+.card__price {
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    font-weight: 700;
+    inset-block-start: 0;
+    inset-inline-start: 20px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 0 10px 10px;
+    display: inline-block;
 }
