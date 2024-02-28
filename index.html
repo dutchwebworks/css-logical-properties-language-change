@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS based on language direction</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/card.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>CSS based on language direction</h1>
+        
+            <div class="language__buttons">
+                <a href="index.html" class="language__button is-active">English</a>
+                <a href="index-ae.html" class="language__button">Arabic</a>
+            </div>
+        </header>        
+
+        <p>Using modern CSS like <strong>Flexbox</strong>, <strong>Grid</strong> and <code>margin-inline-start</code> and <code>margin-inline-end</code> for automatic correct alignment based on the HTML <code>dir</code> -attribute.</p>
+
+        <p>Note the placement of the container, borders and CTA-buttons in the English LTR and Arabic RTL version</p>
+
+        <main>
+            <h2>Super heroes</h2>
+
+            <section class="cards">
+                <article class="card">
+                    <div class="card__header">
+                        <img src="media/superman.jpg" alt="Superman" class="card__img">
+                    </div>
+
+                    <h3 class="card__title">Superman</h3>
+
+                    <p class="card__body">Amet consectetur adipisicing elit. Aut veritatis suscipit magni explicabo harum quaerat. Sunt rem sequi aliquid amet.</p>
+
+                    <div class="card__cta">
+                        <button class="card__button card__button-secondary">More info</button>
+                        <button class="card__button card__button-primary">Buy this card <i class="icon icon--arrow"></i></button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="media/hulk.jpg" alt="Hulk" class="card__img">
+                    </div>
+
+                    <h3 class="card__title">Hulk</h3>
+
+                    <p class="card__body">Aut veritatis suscipit magni explicabo harum quaerat. Sunt rem sequi aliquid amet.</p>
+
+                    <div class="card__cta">
+                        <button class="card__button card__button-secondary">More info</button>
+                        <button class="card__button card__button-primary">Buy this card <i class="icon icon--arrow"></i></button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="media/thor.jpg" alt="Thor" class="card__img">
+                    </div>
+
+                    <h3 class="card__title">Thor</h3>
+
+                    <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut veritatis suscipit magni explicabo harum quaerat. Sunt rem sequi aliquid amet.</p>
+
+                    <div class="card__cta">
+                        <button class="card__button card__button-secondary">More info</button>
+                        <button class="card__button card__button-primary">Buy this card <i class="icon icon--arrow"></i></button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="media/ironman.jpg" alt="Ironman" class="card__img">
+                    </div>
+
+                    <h3 class="card__title">Ironman</h3>
+
+                    <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut veritatis suscipit magni explicabo harum quaerat. Sunt rem sequi aliquid amet.</p>
+
+                    <div class="card__cta">
+                        <button class="card__button card__button-secondary">More info</button>
+                        <button class="card__button card__button-primary">Buy this card <i class="icon icon--arrow"></i></button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__header">
+                        <img src="media/wonderwoman.webp" alt="Wonderwoman" class="card__img">
+                    </div>
+
+                    <h3 class="card__title">Wonderwoman</h3>
+
+                    <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut veritatis suscipit magni explicabo harum quaerat. Sunt rem sequi aliquid amet.</p>
+
+                    <div class="card__cta">
+                        <button class="card__button card__button-secondary">More info</button>
+                        <button class="card__button card__button-primary">Buy this card <i class="icon icon--arrow"></i></button>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
